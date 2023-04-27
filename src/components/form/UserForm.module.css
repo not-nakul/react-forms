@@ -1,0 +1,154 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form[data-modal] {
+  user-select: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  padding: 2rem;
+  border-radius: 1rem;
+
+  color: #2e3749;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-section h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  text-decoration: underline;
+  -webkit-text-decoration-color: #39aba3;
+  text-decoration-color: #39aba3;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
+
+.form-inputs {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-button {
+  align-self: flex-end;
+
+  color: #fff;
+  background-color: #0b3948;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  transition: background-color 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-button[disabled] {
+  opacity: 50%;
+
+  cursor: not-allowed;
+
+  user-select: none;
+}
+
+.form-button:hover {
+  background-color: #061c23;
+}
+
+.form-inputs label {
+  user-select: none;
+
+  font-weight: 450;
+  font-size: 0.9rem;
+}
+
+.form-inputs input {
+  padding: 0.35rem;
+
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+
+  border-radius: 0.5rem;
+  border: 2px solid #21596d;
+
+  transition: 0.2s all ease;
+}
+
+.form-inputs input:focus {
+  outline: 2px solid #39aba3;
+  outline-offset: 0;
+}
+
+.form-inputs input[data-error] {
+  background-color: rgb(255, 225, 225);
+
+  border: 2px solid firebrick;
+}
+
+.form-inputs select {
+  padding: 0.45rem;
+
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+
+  border-radius: 0.5rem;
+  border: 2px solid #21596d;
+
+  transition: 0.2s all ease;
+}
+
+.form-inputs select:focus {
+  outline: 2px solid #39aba3;
+  outline-offset: 0;
+}
+
+.form-inputs select[data-error] {
+  background-color: rgb(255, 225, 225);
+
+  border: 2px solid firebrick;
+}
+
+.form-inputs hr {
+  width: 100%;
+  background-color: #fff;
+  border-top: 2px dashed #21596d;
+}
+
+.form-inputs span {
+  color: firebrick;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+}

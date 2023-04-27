@@ -1,0 +1,90 @@
+.home {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.home-container {
+  display: flex;
+
+  height: 85vh;
+
+  border-radius: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 50%;
+  padding: 5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+
+  text-align: center;
+
+  color: #fff;
+  background-color: #0b3948;
+  background-image: url("../assets/waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-container h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.text-container p {
+  font-size: 1.15rem;
+}
+
+.text-container button {
+  color: #fff;
+  background-color: #39aba3;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  transition: background-color 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.text-container button:hover {
+  background-color: #288982;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  background-color: #fff;
+
+  user-select: none;
+  pointer-events: none;
+}
+
+.img-container img {
+  width: 555px;
+}
