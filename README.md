@@ -1,4 +1,4 @@
-# react-forms
+# React Forms
 User registration form web app built from the ground up including frontend and backend.
 
 ## Frontend built using
