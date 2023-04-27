@@ -61,7 +61,7 @@ const UserForm = () => {
 
             <div className={classes["form-inputs"]}>
               <label className={classes["form-label"]}>
-                First Name:
+                *First Name:
                 <input
                   type="text"
                   placeholder="First Name"
@@ -72,7 +72,7 @@ const UserForm = () => {
               </label>
 
               <label className={classes["form-label"]}>
-                Last Name:
+                *Last Name:
                 <input
                   type="text"
                   placeholder="Last Name"
@@ -83,7 +83,7 @@ const UserForm = () => {
               </label>
 
               <label className={classes["form-label"]}>
-                Gender:
+                *Gender:
                 <select {...register("gender")} data-error={errors?.gender}>
                   <option value="">Choose an option</option>
                   <option value="female">Female</option>
@@ -94,7 +94,7 @@ const UserForm = () => {
               </label>
 
               <label className={classes["form-label"]}>
-                Age:
+                *Age:
                 <input
                   type="number"
                   placeholder="Age in years"
