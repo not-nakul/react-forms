@@ -19,7 +19,7 @@ export const userSchema = yup.object().shape({
     .required("This field is required!")
     .positive("Age cannot be negative or zero!")
     .integer("Age can only be an integer!")
-    .max(60, "Age cannot be more than 80!"),
+    .max(80, "Age cannot be more than 80!"),
 
   gender: yup.string().required("Please choose an option!"),
 

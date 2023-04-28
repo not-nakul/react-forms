@@ -4,7 +4,6 @@ import DataTable from "react-data-table-component";
 import Loader from "./Loader";
 
 import { columns } from "../../utils/dataColumns";
-import { customStyles } from "../../utils/tableStyles";
 
 import classes from "./Users.module.css";
 
@@ -61,7 +60,6 @@ function Users() {
           responsive
           progressPending={pending}
           progressComponent={<Loader />}
-          customStyles={customStyles}
         />
       </div>
     </section>
